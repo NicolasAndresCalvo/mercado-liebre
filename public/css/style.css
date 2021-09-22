@@ -10,19 +10,52 @@ p {
   font-size: 12px;
   text-align: center;
 }
+
+.imagen-buscador{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.precio-descuento{
+  display: flex;
+  
+}
+
+.dos-ul{
+  display: flex;
+  justify-content:space-between;
+}
+
+#barra1{
+display: flex;
+justify-content: space-between;
+}
+
+#barra2{
+display: flex;
+justify-content: space-between;
+}
+
+
 h3 {
+  text-align: center;
+  width: 100%;
   font-size: 24px;
+  margin: 14px;
 }
 .precio {
   font-size: 18px;
   text-align: left;
   margin-top: 5px;
+  width: 30%;
 }
 .descuento {
   font-size: 16px;
   text-align: left;
   color: #39b54a;
   margin-top: 5px;
+  width: 70%;
 }
 .descripcion {
   font-size: 16px;
@@ -94,6 +127,7 @@ main section {
 }
 main section article {
   margin-top: 10px;
+  justify-content: space-around;
 }
 .contenedor-articulo {
   border-top: 1px solid #ebebeb;
@@ -101,16 +135,23 @@ main section article {
   padding: 15px;
 }
 .circulo-icono {
+  float: right;
   color: #39b54a;
   border-radius: 50%;
   border: 1px solid #39b54a;
   width: 30px;
   height: 30px;
   padding: 5px;
+  position: relative;
+  bottom: 36px;
+  right: 20px;
+
 }
 .fa-truck {
   margin: 5px;
 }
+
+
 
 @media (min-width: 361px) {
   .descripcion {
@@ -124,5 +165,31 @@ main section article {
   }
   .burger-menu {
     display: none;
+  }
+}
+
+@media (min-width: 768px){
+  main section{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+  }
+  main section article{
+    width: 48%;
+  }
+  .imagen-buscador{
+    display: flex;
+    position: relative;
+  }
+}
+
+@media (min-width: 1280px){
+  main section{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+  }
+  main section article{
+    width: 24%;
   }
 }
