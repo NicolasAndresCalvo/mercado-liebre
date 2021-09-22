@@ -1,0 +1,75 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <header>
+    <div class="imagen-buscador-compra">
+      <div class="imagen-buscador">
+        <img
+          src="images/logo-mercado-liebre.svg"
+          width="360"
+          alt="Logo de MercadoLiebre"
+        />
+        <div class="buscador">
+          <input
+            type="text"
+            name="buscar"
+            placeholder="Buscar productos, marcas y más"
+          />
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+      <div class="compra">
+        <p>Comprá en cuotas y sin tarjeta de crédito</p>
+      </div>
+    </div>
+    <nav>
+      <div class="dos-ul">
+        <ul id="barra1">
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul id="barra2">
+          <li>
+            <a href="register">Creá tu cuenta <i class="far fa-id-card"></i></a>
+          </li>
+          <li>
+            <a href="login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+          </li>
+          <li>
+            <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="burger-menu">
+      <i class="fa fa-bars burger"></i>
+    </div>
+  </header>
+  <body>
+    <form method="GET" action="/" class="form-login">
+      <label for="Nombre de usuario">Nombre de usuario:</label>
+      <input type="text" name="Nombre de usuario" />
+      <br />
+      <label for="Contraseña">Contraseña:</label>
+      <input type="password" name="Contraseña" />
+      <br />
+      <div class="boton-login">
+        <button type="submit" class="boton-ir-home">Iniciar Sesión</button>
+      </div>
+    </form>
+  </body>
+</html>
